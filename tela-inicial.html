@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiro</title>
+</head>
+<body>
+
+    <img src="es.png" alt="Engenharia de Software" width="400" height="200" style="display: block; margin: 0 auto;">
+    <h1 id="titulo"></h1>
+    <p id="text1"></p>  
+    
+    <img src="otan.jpg" alt="Engenharia de Software" width="400" height="200" style="display: block; margin: 0 auto;">
+    <h2 id="titulo2"></h2> 
+    <p id="text2"></p>
+
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        /* Permite quebras de linha no texto usando \n */
+        #titulo, #text1, #titulo2, #text2 {
+            white-space: pre-line;
+        }
+
+        #titulo, #titulo2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #text1, #text2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+    </style>
+
+
+    <script>
+        const titulo = document.getElementById("titulo");
+        // define e encontra o elemento HTML com o id "titulo" e armazena em uma variável chamada "titulo"
+        titulo.innerText = `Bem-vindo à Engenharia de Software!`;
+        // altera o texto do elemento "titulo" 
+        titulo.style.textAlign = "center";
+        // centraliza o texto do elemento "titulo" usando a propriedade CSS "textAlign"
+
+        const text1 = document.getElementById("text1");
+        // define e encontra o elemento HTML com o id "text1" e armazena em uma variável chamada "text1"
+        text1.innerText = `A Engenharia de Software é a disciplina que aplica princípios de engenharia ao desenvolvimento,
+                           manutenção, operação e evolução de sistemas de software de forma sistemática, disciplinada e
+                           quantificável. Seu objetivo principal é produzir software confiável, útil, escalável e economicamente 
+                           viável — atendendo às necessidades dos usuários e das organizações.`
+
+        const titulo2 = document.getElementById("titulo2");
+        titulo2.innerText = `qual a historia da engenharia de software?`; 
+        
+        const text2 = document.getElementById("text2");
+        text2.innerText = `A história da Engenharia de Software remonta à década de 1960, quando o termo "engenharia de software" 
+                          foi cunhado para descrever a necessidade de aplicar princípios de engenharia ao desenvolvimento de software. 
+                          Naquela época, o desenvolvimento de software estava se tornando cada vez mais complexo, 
+                          e os métodos tradicionais de desenvolvimento não eram suficientes para lidar com os desafios crescentes.`;
+    </script>
+    
+</body>
+</html>
