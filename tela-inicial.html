@@ -15,6 +15,9 @@
     <h2 id="titulo2"></h2> 
     <p id="text2"></p>
 
+    <img src="analista-requisitos.webp" alt="Engenharia de Software" width="400" height="200" style="display: block; margin: 0 auto;">
+    <h2 id="titulo3"></h2>
+    <p id="text3"></p>
 
     <style>
         body {
@@ -23,22 +26,22 @@
         }
 
         /* Permite quebras de linha no texto usando \n */
-        #titulo, #text1, #titulo2, #text2 {
+        #titulo, #text1, #titulo2, #text2, #titulo3, #text3 {
             white-space: pre-line;
         }
 
-        #titulo, #titulo2 {
+        #titulo, #titulo2, #titulo3 {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
         }
 
-        #text1, #text2 {
+        #text1, #text2, #text3 {
             font-size: 18px;
             font-weight: normal;
             margin-bottom: 40px;
-            text-align: justify;
+            text-align: center;
         }
 
     </style>
@@ -47,11 +50,9 @@
     <script>
         const titulo = document.getElementById("titulo");
         // define e encontra o elemento HTML com o id "titulo" e armazena em uma variável chamada "titulo"
-        titulo.innerText = `Bem-vindo à Engenharia de Software!`;
+        titulo.innerText = `Engenharia de Software seus fundamentos!`;
         // altera o texto do elemento "titulo" 
-        titulo.style.textAlign = "center";
-        // centraliza o texto do elemento "titulo" usando a propriedade CSS "textAlign"
-
+        
         const text1 = document.getElementById("text1");
         // define e encontra o elemento HTML com o id "text1" e armazena em uma variável chamada "text1"
         text1.innerText = `A Engenharia de Software é a disciplina que aplica princípios de engenharia ao desenvolvimento,
@@ -67,6 +68,68 @@
                           foi cunhado para descrever a necessidade de aplicar princípios de engenharia ao desenvolvimento de software. 
                           Naquela época, o desenvolvimento de software estava se tornando cada vez mais complexo, 
                           e os métodos tradicionais de desenvolvimento não eram suficientes para lidar com os desafios crescentes.`;
+
+        const titulo3 = document.getElementById("titulo3");
+        titulo3.innerText = `análise de requisitos`;
+
+        const text3 = document.getElementById("text3");
+        text3.innerText = `A análise de requisitos é a fase mais crítica do desenvolvimento de software, pois define o sucesso 
+                          ou fracasso do projeto inteiro: erros aqui geram custos altíssimos depois. Nela, o time conversa 
+                          intensamente com clientes, usuários e stakeholders para entender profundamente o que o sistema precisa fazer
+                           (requisitos funcionais, como “cadastrar usuário” ou “gerar relatório”) e como deve se comportar 
+                           (requisitos não funcionais, como responder em menosde 2 segundos, suportar milhares de acessos simultâneos
+                            ou ser seguro contra invasões). Tudo é documentado de forma clara — seja em um SRS formal ou em user stories
+                           ágeis — e validado com o cliente para eliminar mal-entendidos cedo, transformando uma necessidade vaga em uma
+                            visão compartilhada e precisa do que será construído, evitando que o time desenvolva algo tecnicamente correto,
+                           mas inútil para o negócio..`;
+                           
+       const titulo4 = document.getElementById("titulo4");
+       titulo4.innerText = `design de software`;
+
+       const text4 = document.getElementById("text4");
+         text4.innerText = `O design (projeto) é a fase em que os requisitos são transformados em um plano concreto de construção 
+                            do sistema,do software, decidindo “como” implementar o que foi definido. Divide-se em arquitetura 
+                            (estrutura geral do sistema, divisão em módulos, tecnologias, comunicação entre partes e aspectos como 
+                            escalabilidade e segurança) e design detalhado (classes, interfaces, algoritmos, banco de dados e  
+                            fluxos específicos). Aplicam-se princípios como modularidade, baixa acoplamento e antecipação de 
+                            mudanças para criar um sistema flexível, fácil de codificar, testar e manter no futuro — evitando
+                            código confuso e caro de evoluir. Um bom design serve como blueprint que guia toda a implementação 
+                            e aumenta a longevidade do produto.`;
+
+       const titulo5 = document.getElementById("titulo5");
+       titulo5.innerText = `implementação de software`;
+       
+       const text5 = document.getElementById("text5");
+       text5.innerText = `A codificação (ou implementação) é a fase em que o design aprovado vira código real executável, transformando 
+                        planos abstratos em programas funcionais nas linguagens escolhidas (como Java, Python, JavaScript etc.). Nela, 
+                        os desenvolvedores escrevem o código seguindo rigorosamente a arquitetura e os padrões definidos, aplicando boas 
+                        práticas como clean code, versionamento com Git, revisões de código e integração contínua para garantir legibilidade, 
+                        testabilidade e consistência. Embora seja a etapa mais visível e criativa, representa apenas uma fração do esforço total
+                         do projeto, e seu sucesso depende diretamente da qualidade das fases anteriores — um bom design facilita a codificação, 
+                         enquanto um ruim a torna lenta, propensa a erros e difícil de manter.`;
+
+      const titulo6 = document.getElementById("titulo6");
+      titulo6.innerText = `testes de software`;           
+      
+         const text6 = document.getElementById("text6");
+         text6.innerText = `Os testes de software são a fase em que o sistema é rigorosamente avaliado para garantir que atenda aos requisitos definidos,
+                            funcione corretamente e seja confiável. Envolve a criação e execução de casos de teste que verificam tanto os aspectos funcionais 
+                            (se o software faz o que deve fazer) quanto os não funcionais (desempenho, segurança, usabilidade). Existem diversos tipos de testes, 
+                            como unitários (testam partes isoladas do código), de integração (verificam a interação entre componentes), de sistema 
+                            (avaliam o sistema completo) e de aceitação (validam se o software atende às necessidades do cliente). A automação de testes 
+                            é uma prática comum para aumentar a eficiência e a cobertura dos testes, permitindo que sejam'; executados rapidamente 
+                            e com frequência durante o desenvolvimento. Testar rigorosamente é essencial para identificar e corrigir defeitos cedo,`;
+
+      
+      const titulo7 = document.getElementById("titulo7");
+      titulo7.innerText = `manutenção de software`;                      
+
+        const text7 = document.getElementById("text7");
+        text7.innerText = `A manutenção de software é a fase em que o sistema é mantido e evoluído após sua entrega. Envolve correções de erros, melhorias de desempenho, 
+                          adaptações a novas necessidades e atualizações tecnológicas. É essencial para garantir que o software continue atendendo às expectativas dos usuários
+                           e se mantenha relevante no tempo. Uma boa prática é manter documentação atualizada e seguir processos de versionamento para facilitar a manutenção 
+                         contínua.`;
+
     </script>
     
 </body>
